@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enrique Mejías | Consultor de Análisis de Datos</title>
+    <title>Enrique Mejías | Data Analyst Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -11,150 +11,138 @@
         .code-window { background: #1a1b26; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
         .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
         .hero-gradient { background: radial-gradient(circle at top right, #eff6ff, #ffffff); }
+        /* Ocultar inglés por defecto */
+        .lang-en { display: none; }
     </style>
 </head>
 <body class="bg-white text-slate-900 antialiased">
-
     <nav class="fixed w-full z-50 glass-card">
         <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
             <span class="text-xl font-extrabold tracking-tight text-blue-600 uppercase">Enrique Mejías</span>
-            <a href="TU_LINK_DE_UPWORK" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-blue-200 active:scale-95 text-sm">
-                Contactar en Upwork
-            </a>
+            <div class="flex items-center gap-4">
+                <button onclick="toggleLang()" class="text-[10px] font-bold border border-slate-200 px-3 py-1 rounded hover:bg-slate-50 transition uppercase text-slate-500" id="langBtn">
+                    EN / ES
+                </button>
+                <a href="https://www.upwork.com/freelancers/~013fda32957ad41a31?mp_source=share" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg text-sm">
+                    <span class="lang-es">Contactar en Upwork</span>
+                    <span class="lang-en">Contact on Upwork</span>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-8 hero-gradient">
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="text-blue-600 font-bold tracking-widest text-xs uppercase mb-4 block">Data Analyst & BI Specialist</span>
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-8 tracking-tight text-slate-900 leading-tight">
-                Transformando datos complejos en <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">decisiones estratégicas</span>
-            </h2>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
-                Especializado en la creación de ecosistemas de datos utilizando <strong>SQL, Python y Power BI</strong> para maximizar la rentabilidad operativa.
-            </p>
-            <div class="flex justify-center gap-4">
-                <div class="h-1 w-20 bg-blue-600 rounded-full"></div>
-            </div>
+    <header class="pt-32 pb-20 px-8 hero-gradient text-center border-b border-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-blue-600 font-bold tracking-widest text-[10px] uppercase mb-4 block">Data Analyst & BI Specialist</span>
+            
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-8 tracking-tight text-slate-900 leading-tight lang-es">Transformando datos en <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 font-black">decisiones</span></h2>
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-8 tracking-tight text-slate-900 leading-tight lang-en">Turning data into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 font-black">decisions</span></h2>
+            
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed lang-es">Especializado en la creación de ecosistemas de datos utilizando <strong>SQL, Python y Power BI</strong> para maximizar la rentabilidad operativa.</p>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed lang-en">Specialized in building data ecosystems using <strong>SQL, Python, and Power BI</strong> to maximize operational profitability.</p>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-8 pb-32">
-        
+    <main class="max-w-6xl mx-auto px-8 pb-32 pt-20">
         <section class="mb-32">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h3 class="text-3xl font-extrabold mb-6 text-slate-900">Análisis de Rentabilidad y Logística Retail</h3>
-                    <p class="text-slate-600 mb-8 leading-relaxed italic border-l-4 border-blue-600 pl-4">
-                        "Un análisis profundo sobre más de 9,000 registros para identificar ineficiencias en la cadena de suministro y fugas de margen."
-                    </p>
-                    
+                    <h3 class="text-3xl font-extrabold mb-6 text-slate-900 lang-es">Análisis de Rentabilidad Retail</h3>
+                    <h3 class="text-3xl font-extrabold mb-6 text-slate-900 lang-en">Retail Profitability Analysis</h3>
+
+                    <p class="text-slate-600 mb-8 leading-relaxed italic border-l-4 border-blue-600 pl-4 text-justify lang-es">"Auditoría técnica sobre 9,000+ registros para identificar ineficiencias en la cadena de suministro y fugas de margen."</p>
+                    <p class="text-slate-600 mb-8 leading-relaxed italic border-l-4 border-blue-600 pl-4 text-justify lang-en">"Technical audit of 9,000+ records to identify supply chain inefficiencies and margin leakages."</p>
+
                     <ul class="space-y-6">
                         <li class="flex gap-4">
                             <div class="bg-blue-50 p-2 rounded-lg h-10 w-10 flex items-center justify-center shrink-0">📊</div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Inteligencia de Negocio</h4>
-                                <p class="text-sm text-slate-500 text-pretty text-justify">Modelado de datos avanzado y creación de medidas DAX para KPIs de rendimiento crítico.</p>
+                                <h4 class="font-bold text-slate-900 lang-es">Business Intelligence</h4>
+                                <h4 class="font-bold text-slate-900 lang-en">Business Intelligence</h4>
+                                <p class="text-sm text-slate-500 text-justify lang-es">Modelado avanzado y medidas DAX personalizadas para visualización de KPIs críticos.</p>
+                                <p class="text-sm text-slate-500 text-justify lang-en">Advanced data modeling and custom DAX measures for critical KPI visualization.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
                             <div class="bg-indigo-50 p-2 rounded-lg h-10 w-10 flex items-center justify-center shrink-0">🛠️</div>
                             <div>
-                                <h4 class="font-bold text-slate-900">ETL Avanzado</h4>
-                                <p class="text-sm text-slate-500 text-pretty text-justify">Limpieza de datos brutos y normalización de esquemas para reportes automatizados.</p>
+                                <h4 class="font-bold text-slate-900 lang-es">ETL & Limpieza de Datos</h4>
+                                <h4 class="font-bold text-slate-900 lang-en">ETL & Data Cleaning</h4>
+                                <p class="text-sm text-slate-500 text-justify lang-es">Procesamiento de datos brutos y normalización de esquemas para reportes precisos.</p>
+                                <p class="text-sm text-slate-500 text-justify lang-en">Raw data processing and schema normalization for accurate reporting.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-
                 <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                     <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
-                        <img src="dashboard.jpg" alt="Visualización de Power BI" class="w-full h-auto transform hover:scale-105 transition duration-500">
-                        <div class="p-4 bg-white/90 backdrop-blur text-center border-t border-slate-100">
-                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest leading-loose">Visualización Final de Datos en Power BI</span>
-                        </div>
+                        <img src="dashboard.png" alt="Dashboard" class="w-full h-auto transform hover:scale-105 transition duration-700">
+                        <div class="p-4 bg-white/90 backdrop-blur text-center border-t border-slate-100 italic text-[10px] text-slate-400 lang-es">Captura de pantalla: Dashboard interactivo final</div>
+                        <div class="p-4 bg-white/90 backdrop-blur text-center border-t border-slate-100 italic text-[10px] text-slate-400 lang-en">Screenshot: Final interactive dashboard</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="mb-20">
-            <div class="text-center mb-16">
-                <h3 class="text-3xl font-extrabold mb-4 text-slate-900 leading-normal">Arquitectura de Consultas (T-SQL)</h3>
-                <p class="text-slate-500">Documentación de la lógica utilizada para la extracción de insights de negocio.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <h3 class="text-center text-3xl font-extrabold mb-12 text-slate-900 leading-normal lang-es">Arquitectura SQL</h3>
+            <h3 class="text-center text-3xl font-extrabold mb-12 text-slate-900 leading-normal lang-en">SQL Architecture</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 leading-normal">
                 <div class="code-window">
-                    <div class="px-4 py-3 bg-white/5 border-b border-white/10 flex items-center justify-between leading-normal">
-                        <div class="flex gap-2 leading-normal">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="text-xs text-slate-500 font-mono">analisis_rentabilidad.sql</span>
+                    <div class="px-4 py-3 bg-white/5 border-b border-white/10 flex justify-between items-center leading-normal">
+                        <div class="flex gap-1.5 leading-normal"><div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div></div>
+                        <span class="text-[10px] text-slate-500 font-mono">profit_analysis.sql</span>
                     </div>
-                    <div class="p-6">
-                        <pre class="text-blue-300 font-mono text-sm leading-relaxed overflow-x-auto">
-<code>SELECT 
-    Estado, Categoría,
-    SUM(Ventas) AS Ingresos,
-    SUM(Beneficio) AS Beneficio_Neto
-FROM Sales
-GROUP BY Estado, Categoría
-HAVING SUM(Beneficio) < 0
-ORDER BY Beneficio_Neto ASC;</code></pre>
+                    <div class="p-6 text-blue-300 font-mono text-xs overflow-x-auto leading-normal">
+<code>SELECT State, Category, SUM(Sales) AS Revenue, SUM(Profit) AS Net FROM Sales GROUP BY State, Category HAVING SUM(Profit) < 0 ORDER BY Net ASC;</code>
                     </div>
                 </div>
-
-                <div class="code-window">
-                    <div class="px-4 py-3 bg-white/5 border-b border-white/10 flex items-center justify-between leading-normal">
-                        <div class="flex gap-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <span class="text-xs text-slate-500 font-mono">eficiencia_logistica.sql</span>
+                <div class="code-window leading-normal">
+                    <div class="px-4 py-3 bg-white/5 border-b border-white/10 flex justify-between items-center leading-normal">
+                        <div class="flex gap-1.5 leading-normal"><div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div></div>
+                        <span class="text-[10px] text-slate-500 font-mono">logistics.sql</span>
                     </div>
-                    <div class="p-6 leading-normal">
-                        <pre class="text-indigo-300 font-mono text-sm leading-relaxed overflow-x-auto">
-<code>SELECT 
-    [Modo de envío],
-    AVG(DATEDIFF(day, [Fecha de pedido], 
-    [Fecha de envío])) AS LeadTime
-FROM Sales
-GROUP BY [Modo de envío]
-ORDER BY LeadTime ASC;</code></pre>
+                    <div class="p-6 text-indigo-300 font-mono text-xs overflow-x-auto leading-normal">
+<code>SELECT [Ship Mode], AVG(DATEDIFF(day, [Order Date], [Ship Date])) AS LeadTime FROM Sales GROUP BY [Ship Mode] ORDER BY LeadTime ASC;</code>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="mt-32 p-12 rounded-3xl bg-slate-900 text-center relative overflow-hidden">
-            <div class="relative z-10 leading-normal">
-                <h3 class="text-3xl font-bold text-white mb-4 leading-normal">¿Tiene un desafío de datos en mente?</h3>
-                <p class="text-slate-400 mb-10 max-w-xl mx-auto leading-normal">
-                    Estoy disponible para colaborar en proyectos de consultoría, análisis predictivo y automatización de reportes a través de la plataforma Upwork.
-                </p>
-                <a href="TU_LINK_DE_UPWORK" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-bold transition-all shadow-xl inline-block leading-normal">
-                    Contactar Ahora
-                </a>
-            </div>
+            <h3 class="text-3xl font-bold text-white mb-4 lang-es">¿Listo para potenciar sus datos?</h3>
+            <h3 class="text-3xl font-bold text-white mb-4 lang-en">Ready to unlock your data's potential?</h3>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto lang-es">Colaboremos en proyectos de consultoría, análisis y automatización a través de Upwork.</p>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto lang-en">Let's collaborate on consulting, analytics, and automation projects via Upwork.</p>
+            <a href="https://www.upwork.com/freelancers/~013fda32957ad41a31?mp_source=share" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-bold transition-all shadow-xl inline-block lang-es">Contactar Ahora</a>
+            <a href="https://www.upwork.com/freelancers/~013fda32957ad41a31?mp_source=share" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-bold transition-all shadow-xl inline-block lang-en">Contact Me Now</a>
         </section>
-
     </main>
 
-    <footer class="py-12 border-t border-slate-100 leading-normal">
-        <div class="max-w-6xl mx-auto px-8 text-center leading-normal">
-            <div class="inline-block bg-slate-50 border border-slate-200 px-6 py-2 rounded-full text-[11px] text-slate-500 font-semibold mb-6 tracking-widest uppercase">
-                Upwork Compliance Verified
-            </div>
-            <p class="text-slate-400 text-xs tracking-wider">
-                © 2026 ENRIQUE MEJÍAS | TODO EL TRABAJO Y COMUNICACIÓN SE MANEJA EXCLUSIVAMENTE POR UPWORK.
-            </p>
-        </div>
+    <footer class="py-12 border-t border-slate-100 text-center">
+        <div class="inline-block bg-slate-50 border border-slate-200 px-6 py-2 rounded-full text-[10px] text-slate-500 font-bold mb-6 tracking-widest uppercase">Verified Portfolio</div>
+        <p class="text-slate-400 text-[10px] tracking-wider uppercase">© 2026 ENRIQUE MEJÍAS | Communication exclusively via Upwork</p>
     </footer>
 
+    <script>
+        let currentLang = 'es';
+        function toggleLang() {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            const esElements = document.querySelectorAll('.lang-es');
+            const enElements = document.querySelectorAll('.lang-en');
+            const btn = document.getElementById('langBtn');
+
+            if (currentLang === 'en') {
+                esElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'inline-block');
+                btn.innerText = 'ESPAÑOL';
+            } else {
+                esElements.forEach(el => el.style.display = 'inline-block');
+                enElements.forEach(el => el.style.display = 'none');
+                btn.innerText = 'ENGLISH';
+            }
+        }
+    </script>
 </body>
 </html>
